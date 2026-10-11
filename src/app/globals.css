@@ -1,0 +1,57 @@
+﻿@import "tailwindcss";
+
+:root {
+  --mist: #CFE8EF;
+  --blue: #A0C4E2;
+  --ice: #C6DBF0;
+  --sky: #85C7DE;
+  --soft-blue: #AED1E6;
+  --deep-blue: #24485A;
+  --ink: #1F3541;
+  --muted: #526A75;
+  --paper: #F8FCFE;
+  --line: #BDD2DC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  letter-spacing: -0.045em;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--deep-blue);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--sky);
+  color: var(--deep-blue);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
